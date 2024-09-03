@@ -1,0 +1,24 @@
+.page-nums-container {
+  display: flex;
+}
+.page-num:hover {
+  cursor: pointer;
+}
+.page-num {
+  margin: 10px;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  padding: 10px;
+  background-color: grey;
+  font-weight: 500;
+}
+.active-page {
+  background-color: aqua;
+}
+.footer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,13 @@
+.item-container {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+}
+span {
+  width: 200px;
+  margin: 0 20px;
+}
+.delete-icon {
+  width: 25px;
+  height: 25px;
+}
