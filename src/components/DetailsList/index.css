@@ -7,4 +7,7 @@
 }
 .delete-selected {
   background-color: red;
+  height: 30px;
+  margin-left: 40px;
+  border-radius: 10px;
 }
