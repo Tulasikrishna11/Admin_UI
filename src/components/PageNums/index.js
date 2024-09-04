@@ -3,10 +3,7 @@ import { useState } from "react";
 
 const PageNums = ({ n, pageNum }) => {
   const [activePage, setActivePage] = useState(1);
-  const incrementPage = () => {
-    const nextPage = activePage + 1;
-    handlePageClick(nextPage);
-  };
+
   const pages = Math.ceil(n / 10);
   const pageNumbers = [];
 
@@ -14,13 +11,44 @@ const PageNums = ({ n, pageNum }) => {
     pageNumbers.push(i);
   }
 
+  const nextPage = () => {
+    const nextPage = activePage + 1;
+    handlePageClick(nextPage);
+  };
+
+  const prevPage = () => {
+    const prevPage = activePage - 1;
+    handlePageClick(prevPage);
+  };
   const handlePageClick = (num) => {
     pageNum(num);
     setActivePage(num);
   };
+  const incrementPage = () => {
+    if (activePage < pages) {
+      nextPage();
+    }
+  };
 
+  const decrementPage = () => {
+    if (activePage > 1) {
+      prevPage();
+    }
+  };
+  const firstPage = () => {
+    handlePageClick(1);
+  };
+  const lastPage = () => {
+    handlePageClick(pages);
+  };
   return (
     <div className="footer">
+      <div className="first-page" onClick={firstPage}>
+        &lt; &lt;
+      </div>
+      <div className="page-num" onClick={decrementPage}>
+        &lt;
+      </div>
       <div className="page-nums-container">
         {pageNumbers.map((num) => (
           <p
@@ -31,9 +59,12 @@ const PageNums = ({ n, pageNum }) => {
             {num}
           </p>
         ))}
-        <p className="page-num" onClick={incrementPage}>
+        <div className="page-num" onClick={incrementPage}>
           &gt;
-        </p>
+        </div>
+        <div className="last-page" onClick={lastPage}>
+          &gt; &gt;
+        </div>
       </div>
     </div>
   );

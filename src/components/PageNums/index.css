@@ -22,3 +22,31 @@
   display: flex;
   justify-content: center;
 }
+.first-page {
+  display: flex;
+  margin: 10px;
+  border-radius: 50%;
+  height: 25px;
+  width: 30px;
+  text-align: center;
+  padding: 10px;
+  background-color: grey;
+  font-weight: 500;
+}
+.last-page {
+  display: flex;
+  margin: 10px;
+  border-radius: 50%;
+  height: 25px;
+  width: 30px;
+  text-align: center;
+  padding: 10px;
+  background-color: grey;
+  font-weight: 500;
+}
+.first-page:hover {
+  cursor: pointer;
+}
+.last-page:hover {
+  cursor: pointer;
+}
