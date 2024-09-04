@@ -5,7 +5,7 @@ const SearchBar = (props) => {
     <div>
       <input
         type="search"
-        placeholder="Search "
+        placeholder="Search by name, email or role"
         className="search"
         onChange={filter}
       ></input>

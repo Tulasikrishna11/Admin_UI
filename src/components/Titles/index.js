@@ -4,6 +4,9 @@ const Titles = () => {
   return (
     <div className="title-container">
       <span>
+        <input type="checkbox" />
+      </span>
+      <span>
         <b>Name</b>
       </span>
       <span>

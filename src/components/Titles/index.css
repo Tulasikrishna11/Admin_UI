@@ -1,6 +1,6 @@
 .title-container {
   display: flex;
-  justify-content: space-around;
-  padding-left: 300px;
+  justify-content: start;
   border-bottom: 1px solid black;
+  padding: 5px 35px;
 }

@@ -5,9 +5,12 @@
 .list-container {
   width: 100vw;
 }
-.delete-selected {
+.delete-selected-button {
   background-color: red;
   height: 30px;
   margin-left: 40px;
   border-radius: 10px;
+  color: white;
+  border: none;
+  font-weight: 500;
 }

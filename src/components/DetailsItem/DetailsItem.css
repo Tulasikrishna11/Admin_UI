@@ -2,12 +2,17 @@
   display: flex;
   justify-content: space-around;
   border-bottom: 1px solid black;
+  padding: 5px 0px;
 }
 span {
   width: 200px;
   margin: 0 20px;
 }
 .delete-icon {
+  width: 25px;
+  height: 25px;
+}
+.edit-icon {
   width: 25px;
   height: 25px;
 }

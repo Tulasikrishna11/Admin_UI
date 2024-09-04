@@ -1,4 +1,4 @@
-import DetailsList from "./components/DetailsList";
+import DetailsList from "./components/DetailsList/DetailsList";
 function App() {
   return (
     <div>
