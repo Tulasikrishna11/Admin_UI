@@ -8,6 +8,7 @@ const SearchBar = (props) => {
         placeholder="Search by name, email or role"
         className="search"
         onChange={filter}
+        id="searchInput"
       ></input>
     </div>
   );
